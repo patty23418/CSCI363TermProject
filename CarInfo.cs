@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,9 +22,31 @@ namespace CSCI363Project
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        private void updateGPSBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("GPS has been updated");
+        }
+
+        private void mainBox_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void carInfoBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void controlsBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settingsBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
