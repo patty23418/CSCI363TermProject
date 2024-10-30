@@ -1,4 +1,4 @@
-﻿namespace CSCI363Project
+namespace CSCI363Project
 {
     partial class Controls
     {
@@ -34,28 +34,28 @@
             pictureBox12 = new PictureBox();
             pictureBox13 = new PictureBox();
             panel1 = new Panel();
-            pictureBox10 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            driver2Box = new PictureBox();
+            addDriverBox = new PictureBox();
+            vehicle1Box = new PictureBox();
+            vehicle2Box = new PictureBox();
+            addVehicleBox = new PictureBox();
+            driver1Box = new PictureBox();
             panel2 = new Panel();
             label2 = new Label();
             label1 = new Label();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            settingsBox = new Button();
+            controlsBox = new Button();
+            carInfoBox = new Button();
+            mainBox = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)driver2Box).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)addDriverBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)vehicle1Box).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)vehicle2Box).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)addVehicleBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)driver1Box).BeginInit();
             SuspendLayout();
             // 
             // dateTimePicker1
@@ -98,65 +98,71 @@
             panel1.Size = new Size(444, 2);
             panel1.TabIndex = 19;
             // 
-            // pictureBox10
+            // driver2Box
             // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(141, 96);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(118, 91);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 44;
-            pictureBox10.TabStop = false;
+            driver2Box.Image = (Image)resources.GetObject("driver2Box.Image");
+            driver2Box.Location = new Point(141, 96);
+            driver2Box.Name = "driver2Box";
+            driver2Box.Size = new Size(118, 91);
+            driver2Box.SizeMode = PictureBoxSizeMode.StretchImage;
+            driver2Box.TabIndex = 44;
+            driver2Box.TabStop = false;
+            driver2Box.Click += driver2Box_Click;
             // 
-            // pictureBox9
+            // addDriverBox
             // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(287, 96);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(111, 91);
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox9.TabIndex = 43;
-            pictureBox9.TabStop = false;
+            addDriverBox.Image = (Image)resources.GetObject("addDriverBox.Image");
+            addDriverBox.Location = new Point(287, 96);
+            addDriverBox.Name = "addDriverBox";
+            addDriverBox.Size = new Size(111, 91);
+            addDriverBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            addDriverBox.TabIndex = 43;
+            addDriverBox.TabStop = false;
+            addDriverBox.Click += addDriverBox_Click;
             // 
-            // pictureBox8
+            // vehicle1Box
             // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(11, 340);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(114, 87);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 42;
-            pictureBox8.TabStop = false;
+            vehicle1Box.Image = (Image)resources.GetObject("vehicle1Box.Image");
+            vehicle1Box.Location = new Point(11, 340);
+            vehicle1Box.Name = "vehicle1Box";
+            vehicle1Box.Size = new Size(114, 87);
+            vehicle1Box.SizeMode = PictureBoxSizeMode.StretchImage;
+            vehicle1Box.TabIndex = 42;
+            vehicle1Box.TabStop = false;
+            vehicle1Box.Click += vehicle1Box_Click;
             // 
-            // pictureBox7
+            // vehicle2Box
             // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(141, 340);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(118, 87);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 41;
-            pictureBox7.TabStop = false;
+            vehicle2Box.Image = (Image)resources.GetObject("vehicle2Box.Image");
+            vehicle2Box.Location = new Point(141, 340);
+            vehicle2Box.Name = "vehicle2Box";
+            vehicle2Box.Size = new Size(118, 87);
+            vehicle2Box.SizeMode = PictureBoxSizeMode.StretchImage;
+            vehicle2Box.TabIndex = 41;
+            vehicle2Box.TabStop = false;
+            vehicle2Box.Click += vehicle2Box_Click;
             // 
-            // pictureBox6
+            // addVehicleBox
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(287, 340);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(111, 87);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 40;
-            pictureBox6.TabStop = false;
+            addVehicleBox.Image = (Image)resources.GetObject("addVehicleBox.Image");
+            addVehicleBox.Location = new Point(287, 340);
+            addVehicleBox.Name = "addVehicleBox";
+            addVehicleBox.Size = new Size(111, 87);
+            addVehicleBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            addVehicleBox.TabIndex = 40;
+            addVehicleBox.TabStop = false;
+            addVehicleBox.Click += addVehicleBox_Click;
             // 
-            // pictureBox5
+            // driver1Box
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(11, 96);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(114, 91);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 39;
-            pictureBox5.TabStop = false;
+            driver1Box.Image = (Image)resources.GetObject("driver1Box.Image");
+            driver1Box.Location = new Point(11, 96);
+            driver1Box.Name = "driver1Box";
+            driver1Box.Size = new Size(114, 91);
+            driver1Box.SizeMode = PictureBoxSizeMode.StretchImage;
+            driver1Box.TabIndex = 39;
+            driver1Box.TabStop = false;
+            driver1Box.Click += driver1Box_Click;
             // 
             // panel2
             // 
@@ -174,7 +180,6 @@
             label2.Size = new Size(81, 28);
             label2.TabIndex = 38;
             label2.Text = "Vehicles";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -186,46 +191,46 @@
             label1.TabIndex = 37;
             label1.Text = "Drivers";
             // 
-            // button4
+            // settingsBox
             // 
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(331, 494);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 54);
-            button4.TabIndex = 56;
-            button4.Text = "Settings";
-            button4.UseVisualStyleBackColor = true;
+            settingsBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            settingsBox.Location = new Point(331, 494);
+            settingsBox.Name = "settingsBox";
+            settingsBox.Size = new Size(100, 54);
+            settingsBox.TabIndex = 56;
+            settingsBox.Text = "Settings";
+            settingsBox.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // controlsBox
             // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(225, 494);
-            button3.Name = "button3";
-            button3.Size = new Size(100, 54);
-            button3.TabIndex = 55;
-            button3.Text = "Controls";
-            button3.UseVisualStyleBackColor = true;
+            controlsBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            controlsBox.Location = new Point(225, 494);
+            controlsBox.Name = "controlsBox";
+            controlsBox.Size = new Size(100, 54);
+            controlsBox.TabIndex = 55;
+            controlsBox.Text = "Controls";
+            controlsBox.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // carInfoBox
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(119, 494);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 54);
-            button2.TabIndex = 54;
-            button2.Text = "Car Info";
-            button2.UseVisualStyleBackColor = true;
+            carInfoBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            carInfoBox.Location = new Point(119, 494);
+            carInfoBox.Name = "carInfoBox";
+            carInfoBox.Size = new Size(100, 54);
+            carInfoBox.TabIndex = 54;
+            carInfoBox.Text = "Car Info";
+            carInfoBox.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // mainBox
             // 
-            button1.BackColor = Color.Transparent;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(14, 494);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 54);
-            button1.TabIndex = 53;
-            button1.Text = "Main";
-            button1.UseVisualStyleBackColor = false;
+            mainBox.BackColor = Color.Transparent;
+            mainBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            mainBox.Location = new Point(14, 494);
+            mainBox.Name = "mainBox";
+            mainBox.Size = new Size(100, 54);
+            mainBox.TabIndex = 53;
+            mainBox.Text = "Main";
+            mainBox.UseVisualStyleBackColor = false;
             // 
             // Controls
             // 
@@ -233,20 +238,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(445, 560);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(pictureBox10);
-            Controls.Add(pictureBox9);
+            Controls.Add(settingsBox);
+            Controls.Add(controlsBox);
+            Controls.Add(carInfoBox);
+            Controls.Add(mainBox);
+            Controls.Add(driver2Box);
+            Controls.Add(addDriverBox);
             Controls.Add(panel1);
-            Controls.Add(pictureBox8);
+            Controls.Add(vehicle1Box);
             Controls.Add(pictureBox13);
-            Controls.Add(pictureBox7);
+            Controls.Add(vehicle2Box);
             Controls.Add(pictureBox12);
-            Controls.Add(pictureBox6);
+            Controls.Add(addVehicleBox);
             Controls.Add(pictureBox11);
-            Controls.Add(pictureBox5);
+            Controls.Add(driver1Box);
             Controls.Add(dateTimePicker1);
             Controls.Add(panel2);
             Controls.Add(label2);
@@ -257,12 +262,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)driver2Box).EndInit();
+            ((System.ComponentModel.ISupportInitialize)addDriverBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)vehicle1Box).EndInit();
+            ((System.ComponentModel.ISupportInitialize)vehicle2Box).EndInit();
+            ((System.ComponentModel.ISupportInitialize)addVehicleBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)driver1Box).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -273,18 +278,18 @@
         private PictureBox pictureBox12;
         private PictureBox pictureBox13;
         private Panel panel1;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
+        private PictureBox driver2Box;
+        private PictureBox addDriverBox;
+        private PictureBox vehicle1Box;
+        private PictureBox vehicle2Box;
+        private PictureBox addVehicleBox;
+        private PictureBox driver1Box;
         private Panel panel2;
         private Label label2;
         private Label label1;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button settingsBox;
+        private Button controlsBox;
+        private Button carInfoBox;
+        private Button mainBox;
     }
 }
