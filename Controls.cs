@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,9 +22,36 @@ namespace CSCI363Project
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+
+        private void driver1Box_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void driver2Box_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addDriverBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vehicle1Box_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vehicle2Box_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addVehicleBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
