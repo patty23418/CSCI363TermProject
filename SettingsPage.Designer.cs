@@ -1,4 +1,4 @@
-﻿namespace CSCI363Project
+namespace CSCI363Project
 {
     partial class SettingsPage
     {
@@ -37,24 +37,24 @@
             label1 = new Label();
             label2 = new Label();
             panel2 = new Panel();
-            pictureBox5 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
+            updateAppBox = new PictureBox();
+            nightTimeBox = new PictureBox();
+            dayTimeBox = new PictureBox();
             panel3 = new Panel();
             label3 = new Label();
             label11 = new Label();
             label12 = new Label();
             checkedListBox1 = new CheckedListBox();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            settingsBox = new Button();
+            controlsBox = new Button();
+            carInfoBox = new Button();
+            mainBox = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)updateAppBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nightTimeBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dayTimeBox).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -124,31 +124,34 @@
             panel2.Size = new Size(444, 2);
             panel2.TabIndex = 25;
             // 
-            // pictureBox5
+            // updateAppBox
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(103, 86);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(211, 151);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 30;
-            pictureBox5.TabStop = false;
+            updateAppBox.Image = (Image)resources.GetObject("updateAppBox.Image");
+            updateAppBox.Location = new Point(98, 87);
+            updateAppBox.Name = "updateAppBox";
+            updateAppBox.Size = new Size(211, 151);
+            updateAppBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            updateAppBox.TabIndex = 30;
+            updateAppBox.TabStop = false;
+            updateAppBox.Click += updateAppBox_Click;
             // 
-            // pictureBox7
+            // nightTimeBox
             // 
-            pictureBox7.Location = new Point(333, 325);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(42, 37);
-            pictureBox7.TabIndex = 32;
-            pictureBox7.TabStop = false;
+            nightTimeBox.Location = new Point(333, 325);
+            nightTimeBox.Name = "nightTimeBox";
+            nightTimeBox.Size = new Size(42, 37);
+            nightTimeBox.TabIndex = 32;
+            nightTimeBox.TabStop = false;
+            nightTimeBox.Click += nightTimeBox_Click;
             // 
-            // pictureBox8
+            // dayTimeBox
             // 
-            pictureBox8.Location = new Point(141, 329);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(50, 33);
-            pictureBox8.TabIndex = 33;
-            pictureBox8.TabStop = false;
+            dayTimeBox.Location = new Point(141, 329);
+            dayTimeBox.Name = "dayTimeBox";
+            dayTimeBox.Size = new Size(50, 33);
+            dayTimeBox.TabIndex = 33;
+            dayTimeBox.TabStop = false;
+            dayTimeBox.Click += dayTimeBox_Click;
             // 
             // panel3
             // 
@@ -198,46 +201,50 @@
             checkedListBox1.Size = new Size(420, 158);
             checkedListBox1.TabIndex = 44;
             // 
-            // button4
+            // settingsBox
             // 
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(331, 588);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 54);
-            button4.TabIndex = 56;
-            button4.Text = "Settings";
-            button4.UseVisualStyleBackColor = true;
+            settingsBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            settingsBox.Location = new Point(331, 588);
+            settingsBox.Name = "settingsBox";
+            settingsBox.Size = new Size(100, 54);
+            settingsBox.TabIndex = 56;
+            settingsBox.Text = "Settings";
+            settingsBox.UseVisualStyleBackColor = true;
+            settingsBox.Click += settingsBox_Click;
             // 
-            // button3
+            // controlsBox
             // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(225, 588);
-            button3.Name = "button3";
-            button3.Size = new Size(100, 54);
-            button3.TabIndex = 55;
-            button3.Text = "Controls";
-            button3.UseVisualStyleBackColor = true;
+            controlsBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            controlsBox.Location = new Point(225, 588);
+            controlsBox.Name = "controlsBox";
+            controlsBox.Size = new Size(100, 54);
+            controlsBox.TabIndex = 55;
+            controlsBox.Text = "Controls";
+            controlsBox.UseVisualStyleBackColor = true;
+            controlsBox.Click += controlsBox_Click;
             // 
-            // button2
+            // carInfoBox
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(119, 588);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 54);
-            button2.TabIndex = 54;
-            button2.Text = "Car Info";
-            button2.UseVisualStyleBackColor = true;
+            carInfoBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            carInfoBox.Location = new Point(119, 588);
+            carInfoBox.Name = "carInfoBox";
+            carInfoBox.Size = new Size(100, 54);
+            carInfoBox.TabIndex = 54;
+            carInfoBox.Text = "Car Info";
+            carInfoBox.UseVisualStyleBackColor = true;
+            carInfoBox.Click += carInfoBox_Click;
             // 
-            // button1
+            // mainBox
             // 
-            button1.BackColor = Color.Transparent;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(14, 588);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 54);
-            button1.TabIndex = 53;
-            button1.Text = "Main";
-            button1.UseVisualStyleBackColor = false;
+            mainBox.BackColor = Color.Transparent;
+            mainBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            mainBox.Location = new Point(14, 588);
+            mainBox.Name = "mainBox";
+            mainBox.Size = new Size(100, 54);
+            mainBox.TabIndex = 53;
+            mainBox.Text = "Main";
+            mainBox.UseVisualStyleBackColor = false;
+            mainBox.Click += mainBox_Click;
             // 
             // SettingsPage
             // 
@@ -245,18 +252,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(443, 654);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(settingsBox);
+            Controls.Add(controlsBox);
+            Controls.Add(carInfoBox);
+            Controls.Add(mainBox);
             Controls.Add(checkedListBox1);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(label3);
             Controls.Add(panel3);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox5);
+            Controls.Add(dayTimeBox);
+            Controls.Add(nightTimeBox);
+            Controls.Add(updateAppBox);
             Controls.Add(panel2);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -270,9 +277,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)updateAppBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nightTimeBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dayTimeBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -286,17 +293,17 @@
         private Label label1;
         private Label label2;
         private Panel panel2;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
+        private PictureBox updateAppBox;
+        private PictureBox nightTimeBox;
+        private PictureBox dayTimeBox;
         private Panel panel3;
         private Label label3;
         private Label label11;
         private Label label12;
         private CheckedListBox checkedListBox1;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button settingsBox;
+        private Button controlsBox;
+        private Button carInfoBox;
+        private Button mainBox;
     }
 }
