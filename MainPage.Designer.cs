@@ -1,4 +1,4 @@
-﻿namespace CSCI363Project
+namespace CSCI363Project
 {
     partial class MainPage
     {
@@ -39,25 +39,25 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            pictureBox10 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            sunroofBox = new PictureBox();
+            engineBox = new PictureBox();
+            upWindowBox = new PictureBox();
+            alarmBox = new PictureBox();
+            downWindowBox = new PictureBox();
+            doorBox = new PictureBox();
+            mainBox = new Button();
+            carInfoBox = new Button();
+            controlsBox = new Button();
+            settingsBox = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sunroofBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)engineBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)upWindowBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)alarmBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)downWindowBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)doorBox).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -150,105 +150,114 @@
             label1.TabIndex = 31;
             label1.Text = "Start/Stop Engine";
             // 
-            // pictureBox10
+            // sunroofBox
             // 
-            pictureBox10.Location = new Point(282, 256);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(147, 105);
-            pictureBox10.TabIndex = 30;
-            pictureBox10.TabStop = false;
+            sunroofBox.Location = new Point(282, 256);
+            sunroofBox.Name = "sunroofBox";
+            sunroofBox.Size = new Size(147, 105);
+            sunroofBox.TabIndex = 30;
+            sunroofBox.TabStop = false;
+            sunroofBox.Click += sunroofBox_Click;
             // 
-            // pictureBox9
+            // engineBox
             // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(27, 47);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(138, 143);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox9.TabIndex = 29;
-            pictureBox9.TabStop = false;
-            pictureBox9.Click += pictureBox9_Click;
+            engineBox.Image = (Image)resources.GetObject("engineBox.Image");
+            engineBox.Location = new Point(27, 47);
+            engineBox.Name = "engineBox";
+            engineBox.Size = new Size(138, 143);
+            engineBox.SizeMode = PictureBoxSizeMode.Zoom;
+            engineBox.TabIndex = 29;
+            engineBox.TabStop = false;
+            engineBox.Click += engineBox_Click;
             // 
-            // pictureBox8
+            // upWindowBox
             // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(27, 270);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(57, 91);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 28;
-            pictureBox8.TabStop = false;
+            upWindowBox.Image = (Image)resources.GetObject("upWindowBox.Image");
+            upWindowBox.Location = new Point(27, 270);
+            upWindowBox.Name = "upWindowBox";
+            upWindowBox.Size = new Size(57, 91);
+            upWindowBox.SizeMode = PictureBoxSizeMode.Zoom;
+            upWindowBox.TabIndex = 28;
+            upWindowBox.TabStop = false;
+            upWindowBox.Click += upWindowBox_Click;
             // 
-            // pictureBox7
+            // alarmBox
             // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(145, 393);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(133, 113);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 27;
-            pictureBox7.TabStop = false;
+            alarmBox.Image = (Image)resources.GetObject("alarmBox.Image");
+            alarmBox.Location = new Point(145, 393);
+            alarmBox.Name = "alarmBox";
+            alarmBox.Size = new Size(133, 113);
+            alarmBox.SizeMode = PictureBoxSizeMode.Zoom;
+            alarmBox.TabIndex = 27;
+            alarmBox.TabStop = false;
+            alarmBox.Click += alarmBox_Click;
             // 
-            // pictureBox6
+            // downWindowBox
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(90, 270);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(55, 91);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 26;
-            pictureBox6.TabStop = false;
+            downWindowBox.Image = (Image)resources.GetObject("downWindowBox.Image");
+            downWindowBox.Location = new Point(90, 270);
+            downWindowBox.Name = "downWindowBox";
+            downWindowBox.Size = new Size(55, 91);
+            downWindowBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            downWindowBox.TabIndex = 26;
+            downWindowBox.TabStop = false;
+            downWindowBox.Click += downWindowBox_Click;
             // 
-            // pictureBox5
+            // doorBox
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(282, 47);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(147, 143);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 25;
-            pictureBox5.TabStop = false;
+            doorBox.Image = (Image)resources.GetObject("doorBox.Image");
+            doorBox.Location = new Point(282, 47);
+            doorBox.Name = "doorBox";
+            doorBox.Size = new Size(147, 143);
+            doorBox.SizeMode = PictureBoxSizeMode.Zoom;
+            doorBox.TabIndex = 25;
+            doorBox.TabStop = false;
+            doorBox.Click += doorBox_Click;
             // 
-            // button1
+            // mainBox
             // 
-            button1.BackColor = Color.Transparent;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(12, 565);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 54);
-            button1.TabIndex = 36;
-            button1.Text = "Main";
-            button1.UseVisualStyleBackColor = false;
+            mainBox.BackColor = Color.Transparent;
+            mainBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            mainBox.Location = new Point(12, 565);
+            mainBox.Name = "mainBox";
+            mainBox.Size = new Size(100, 54);
+            mainBox.TabIndex = 36;
+            mainBox.Text = "Main";
+            mainBox.UseVisualStyleBackColor = false;
+            mainBox.Click += mainBox_Click;
             // 
-            // button2
+            // carInfoBox
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(117, 565);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 54);
-            button2.TabIndex = 37;
-            button2.Text = "Car Info";
-            button2.UseVisualStyleBackColor = true;
+            carInfoBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            carInfoBox.Location = new Point(117, 565);
+            carInfoBox.Name = "carInfoBox";
+            carInfoBox.Size = new Size(100, 54);
+            carInfoBox.TabIndex = 37;
+            carInfoBox.Text = "Car Info";
+            carInfoBox.UseVisualStyleBackColor = true;
+            carInfoBox.Click += carInfoBox_Click;
             // 
-            // button3
+            // controlsBox
             // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(223, 565);
-            button3.Name = "button3";
-            button3.Size = new Size(100, 54);
-            button3.TabIndex = 38;
-            button3.Text = "Controls";
-            button3.UseVisualStyleBackColor = true;
+            controlsBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            controlsBox.Location = new Point(223, 565);
+            controlsBox.Name = "controlsBox";
+            controlsBox.Size = new Size(100, 54);
+            controlsBox.TabIndex = 38;
+            controlsBox.Text = "Controls";
+            controlsBox.UseVisualStyleBackColor = true;
+            controlsBox.Click += controlsBox_Click;
             // 
-            // button4
+            // settingsBox
             // 
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(329, 565);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 54);
-            button4.TabIndex = 39;
-            button4.Text = "Settings";
-            button4.UseVisualStyleBackColor = true;
+            settingsBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            settingsBox.Location = new Point(329, 565);
+            settingsBox.Name = "settingsBox";
+            settingsBox.Size = new Size(100, 54);
+            settingsBox.TabIndex = 39;
+            settingsBox.Text = "Settings";
+            settingsBox.UseVisualStyleBackColor = true;
+            settingsBox.Click += settingsBox_Click;
             // 
             // MainPage
             // 
@@ -256,21 +265,21 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(441, 631);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(settingsBox);
+            Controls.Add(controlsBox);
+            Controls.Add(carInfoBox);
+            Controls.Add(mainBox);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(pictureBox10);
-            Controls.Add(pictureBox9);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
+            Controls.Add(sunroofBox);
+            Controls.Add(engineBox);
+            Controls.Add(upWindowBox);
+            Controls.Add(alarmBox);
+            Controls.Add(downWindowBox);
+            Controls.Add(doorBox);
             Controls.Add(panel1);
             Controls.Add(pictureBox13);
             Controls.Add(pictureBox12);
@@ -281,12 +290,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sunroofBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)engineBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)upWindowBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)alarmBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)downWindowBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)doorBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -302,15 +311,15 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private PictureBox sunroofBox;
+        private PictureBox engineBox;
+        private PictureBox upWindowBox;
+        private PictureBox alarmBox;
+        private PictureBox downWindowBox;
+        private PictureBox doorBox;
+        private Button mainBox;
+        private Button carInfoBox;
+        private Button controlsBox;
+        private Button settingsBox;
     }
 }
