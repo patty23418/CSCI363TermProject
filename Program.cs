@@ -8,8 +8,10 @@ namespace CSCI363Project
         [STAThread]
         static void Main()
         {
+            Application.EnableVisualStyles();
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+            Application.SetCompatibleTextRenderingDefault(false);
             ApplicationConfiguration.Initialize();
             Application.Run(new MainPage());
         }
