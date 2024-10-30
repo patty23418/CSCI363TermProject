@@ -1,4 +1,4 @@
-﻿namespace CSCI363Project
+namespace CSCI363Project
 {
     partial class CarInfo
     {
@@ -43,18 +43,18 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            pictureBox6 = new PictureBox();
+            updateGPSBox = new PictureBox();
             label5 = new Label();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            settingsBox = new Button();
+            controlsBox = new Button();
+            carInfoBox = new Button();
+            mainBox = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)updateGPSBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -174,16 +174,17 @@
             label4.TabIndex = 30;
             label4.Text = "Battery Strength";
             // 
-            // pictureBox6
+            // updateGPSBox
             // 
-            pictureBox6.BackColor = SystemColors.Control;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(28, 70);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(116, 61);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 31;
-            pictureBox6.TabStop = false;
+            updateGPSBox.BackColor = SystemColors.Control;
+            updateGPSBox.Image = (Image)resources.GetObject("updateGPSBox.Image");
+            updateGPSBox.Location = new Point(28, 70);
+            updateGPSBox.Name = "updateGPSBox";
+            updateGPSBox.Size = new Size(116, 61);
+            updateGPSBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            updateGPSBox.TabIndex = 31;
+            updateGPSBox.TabStop = false;
+            updateGPSBox.Click += updateGPSBox_Click;
             // 
             // label5
             // 
@@ -195,46 +196,50 @@
             label5.TabIndex = 32;
             label5.Text = "Update GPS";
             // 
-            // button4
+            // settingsBox
             // 
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(330, 584);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 54);
-            button4.TabIndex = 51;
-            button4.Text = "Settings";
-            button4.UseVisualStyleBackColor = true;
+            settingsBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            settingsBox.Location = new Point(330, 584);
+            settingsBox.Name = "settingsBox";
+            settingsBox.Size = new Size(100, 54);
+            settingsBox.TabIndex = 51;
+            settingsBox.Text = "Settings";
+            settingsBox.UseVisualStyleBackColor = true;
+            settingsBox.Click += settingsBox_Click;
             // 
-            // button3
+            // controlsBox
             // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(224, 584);
-            button3.Name = "button3";
-            button3.Size = new Size(100, 54);
-            button3.TabIndex = 50;
-            button3.Text = "Controls";
-            button3.UseVisualStyleBackColor = true;
+            controlsBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            controlsBox.Location = new Point(224, 584);
+            controlsBox.Name = "controlsBox";
+            controlsBox.Size = new Size(100, 54);
+            controlsBox.TabIndex = 50;
+            controlsBox.Text = "Controls";
+            controlsBox.UseVisualStyleBackColor = true;
+            controlsBox.Click += controlsBox_Click;
             // 
-            // button2
+            // carInfoBox
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(118, 584);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 54);
-            button2.TabIndex = 49;
-            button2.Text = "Car Info";
-            button2.UseVisualStyleBackColor = true;
+            carInfoBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            carInfoBox.Location = new Point(118, 584);
+            carInfoBox.Name = "carInfoBox";
+            carInfoBox.Size = new Size(100, 54);
+            carInfoBox.TabIndex = 49;
+            carInfoBox.Text = "Car Info";
+            carInfoBox.UseVisualStyleBackColor = true;
+            carInfoBox.Click += carInfoBox_Click;
             // 
-            // button1
+            // mainBox
             // 
-            button1.BackColor = Color.Transparent;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(13, 584);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 54);
-            button1.TabIndex = 48;
-            button1.Text = "Main";
-            button1.UseVisualStyleBackColor = false;
+            mainBox.BackColor = Color.Transparent;
+            mainBox.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            mainBox.Location = new Point(13, 584);
+            mainBox.Name = "mainBox";
+            mainBox.Size = new Size(100, 54);
+            mainBox.TabIndex = 48;
+            mainBox.Text = "Main";
+            mainBox.UseVisualStyleBackColor = false;
+            mainBox.Click += mainBox_Click;
             // 
             // pictureBox1
             // 
@@ -253,12 +258,12 @@
             BackColor = SystemColors.Control;
             ClientSize = new Size(441, 650);
             Controls.Add(pictureBox1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(settingsBox);
+            Controls.Add(controlsBox);
+            Controls.Add(carInfoBox);
+            Controls.Add(mainBox);
             Controls.Add(label5);
-            Controls.Add(pictureBox6);
+            Controls.Add(updateGPSBox);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -280,7 +285,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)updateGPSBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -301,12 +306,12 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private PictureBox pictureBox6;
+        private PictureBox updateGPSBox;
         private Label label5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button settingsBox;
+        private Button controlsBox;
+        private Button carInfoBox;
+        private Button mainBox;
         private PictureBox pictureBox1;
     }
 }
