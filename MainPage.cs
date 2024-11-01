@@ -5,6 +5,11 @@ namespace CSCI363Project
 {
     public partial class MainPage : Form
     {
+        private bool engineOn=false;
+        private bool alarmOn = false;
+        private bool doorsLocked = false;
+        private bool sunroofOpen = false;
+
         public MainPage()
         {
             InitializeComponent();
@@ -12,12 +17,16 @@ namespace CSCI363Project
 
         private void engineBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Engine has turned on");
+            engineOn = !engineOn;
+            MessageBox.Show(engineOn ? "Engine is now ON" : "Engine is now OFF", "Engine Status");
+
+
         }
 
         private void doorBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Doors have been unlocked");
+            doorsLocked = !doorsLocked;
+            MessageBox.Show(doorsLocked ? "Doors are now Locked" : "Doors are now Unlocked","Door Status");
 
         }
 
@@ -35,34 +44,35 @@ namespace CSCI363Project
 
         private void sunroofBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Sunroof has been opened");
+            sunroofOpen = !sunroofOpen;
+            MessageBox.Show(sunroofOpen ? "Sunroof has been opened" : "Sunroof has been closed", "Sunroof Status");
 
         }
 
         private void alarmBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Alarm has been turned on");
+            alarmOn = !alarmOn;
+            MessageBox.Show(alarmOn ? "Alarm has been turned on" : "Alarm has been turned off", "Alarm Status");
 
         }
 
-        private void mainBox_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void carInfoBox_Click(object sender, EventArgs e)
         {
-
+            CarInfo carInfoForm = new CarInfo();
+            carInfoForm.Show();
         }
 
         private void controlsBox_Click(object sender, EventArgs e)
         {
-
+            Controls controlsForm = new Controls();
+            controlsForm.Show();
         }
 
         private void settingsBox_Click(object sender, EventArgs e)
         {
-
+            SettingsPage settingsForm = new SettingsPage();
+            settingsForm.Show();
         }
     }
 }
