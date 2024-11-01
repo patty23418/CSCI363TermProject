@@ -200,6 +200,7 @@ namespace CSCI363Project
             settingsBox.TabIndex = 56;
             settingsBox.Text = "Settings";
             settingsBox.UseVisualStyleBackColor = true;
+            settingsBox.Click += settingsBox_Click;
             // 
             // controlsBox
             // 
@@ -220,6 +221,7 @@ namespace CSCI363Project
             carInfoBox.TabIndex = 54;
             carInfoBox.Text = "Car Info";
             carInfoBox.UseVisualStyleBackColor = true;
+            carInfoBox.Click += carInfoBox_Click;
             // 
             // mainBox
             // 
@@ -231,6 +233,7 @@ namespace CSCI363Project
             mainBox.TabIndex = 53;
             mainBox.Text = "Main";
             mainBox.UseVisualStyleBackColor = false;
+            mainBox.Click += mainBox_Click;
             // 
             // Controls
             // 
