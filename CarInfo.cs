@@ -33,19 +33,17 @@ namespace CSCI363Project
 
         }
 
-        private void carInfoBox_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void controlsBox_Click(object sender, EventArgs e)
         {
-
+            Controls controlsForm = new Controls();
+            controlsForm.Show();
         }
 
         private void settingsBox_Click(object sender, EventArgs e)
         {
-
+            SettingsPage settingsForm = new SettingsPage();
+            settingsForm.Show();
         }
 
     }
