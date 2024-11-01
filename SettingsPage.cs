@@ -34,22 +34,21 @@ namespace CSCI363Project
 
         private void mainBox_Click(object sender, EventArgs e)
         {
-
+            MainPage mainPage = new MainPage();
+            mainPage.Show();
         }
 
         private void carInfoBox_Click(object sender, EventArgs e)
         {
-
+            CarInfo carInfoForm = new CarInfo();
+            carInfoForm.Show();
         }
 
         private void controlsBox_Click(object sender, EventArgs e)
         {
-
+            Controls controlsForm = new Controls();
+            controlsForm.Show();
         }
 
-        private void settingsBox_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
