@@ -224,7 +224,6 @@ namespace CSCI363Project
             mainBox.TabIndex = 36;
             mainBox.Text = "Main";
             mainBox.UseVisualStyleBackColor = false;
-            mainBox.Click += mainBox_Click;
             // 
             // carInfoBox
             // 
