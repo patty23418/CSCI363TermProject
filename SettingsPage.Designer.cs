@@ -210,7 +210,6 @@ namespace CSCI363Project
             settingsBox.TabIndex = 56;
             settingsBox.Text = "Settings";
             settingsBox.UseVisualStyleBackColor = true;
-            settingsBox.Click += settingsBox_Click;
             // 
             // controlsBox
             // 
