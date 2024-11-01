@@ -25,17 +25,20 @@ namespace CSCI363Project
 
         private void driver1Box_Click(object sender, EventArgs e)
         {
-
+            DriverInfo driver = new DriverInfo();
+            driver.Show();
         }
 
         private void driver2Box_Click(object sender, EventArgs e)
         {
-
+            DriverInfo driver = new DriverInfo();
+            driver.Show();
         }
 
         private void addDriverBox_Click(object sender, EventArgs e)
         {
-
+            DriverInfo driver = new DriverInfo();
+            driver.Show();
         }
 
         private void vehicle1Box_Click(object sender, EventArgs e)
@@ -53,5 +56,21 @@ namespace CSCI363Project
 
         }
 
+        private void mainBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void carInfoBox_Click(object sender, EventArgs e)
+        {
+            CarInfo carInfoForm = new CarInfo();
+            carInfoForm.Show();
+        }
+
+        private void settingsBox_Click(object sender, EventArgs e)
+        {
+            SettingsPage settingsForm = new SettingsPage();
+            settingsForm.Show();
+        }
     }
 }
